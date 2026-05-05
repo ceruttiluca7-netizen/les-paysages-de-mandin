@@ -1,0 +1,54 @@
+# robots.txt — Les Paysages de Mandin
+# Paysagiste sur le Bassin d'Arcachon (33)
+# https://lespaysagesdemandin.fr
+
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+
+# Sitemap principal
+Sitemap: https://lespaysagesdemandin.fr/sitemap.xml
+
+# Crawlers IA — explicitement autorisés (pour citation dans ChatGPT, Perplexity, Claude, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Mauvais crawlers connus — bloqués
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

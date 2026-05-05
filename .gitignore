@@ -1,0 +1,19 @@
+# Fichiers système macOS
+.DS_Store
+**/.DS_Store
+
+# Dépendances Node
+node_modules/
+
+# Fichiers temporaires & secrets
+*.log
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Originaux JPG : sauvegarde locale uniquement (137 MB)
+# Les WebP optimisés dans images/realisations/ sont versionnés.
+images/originaux/

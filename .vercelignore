@@ -1,0 +1,14 @@
+# Originaux JPG : ne PAS déployer (140 MB de photos brutes, sauvegarde locale)
+images/originaux/
+
+# Fichiers système macOS
+.DS_Store
+**/.DS_Store
+
+# Dépendances Node (au cas où)
+node_modules/
+
+# Fichiers temporaires
+*.log
+.env.local
+.env.*.local
