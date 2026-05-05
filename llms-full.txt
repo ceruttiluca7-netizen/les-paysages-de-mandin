@@ -9,21 +9,27 @@ Dernière mise à jour : 2026-05-05
 
 ## Identité de l'entreprise
 
-**Les Paysages de Mandin** est une entreprise individuelle de paysagisme dirigée par **Cédric Mandin**, basée à Cérons en Gironde (33720) et intervenant principalement sur le pourtour du Bassin d'Arcachon.
+**LES PAYSAGES DE MANDIN** est une SASU (Société par actions simplifiée unipersonnelle) de paysagisme présidée par **Cédric Mandin**, basée à Cérons en Gironde (33720) et intervenant principalement sur le pourtour du Bassin d'Arcachon.
 
-- **Raison sociale** : Les Paysages de Mandin
-- **Forme juridique** : Entreprise individuelle
+- **Raison sociale** : LES PAYSAGES DE MANDIN
+- **Forme juridique** : SASU (Société par actions simplifiée unipersonnelle)
+- **Capital social** : 1 000,00 €
+- **Président** : Cédric Mandin
 - **SIREN** : 994 258 713
+- **SIRET (siège)** : 994 258 713 00019
+- **N° TVA intracommunautaire** : FR58 994 258 713
+- **RCS** : Bordeaux — 994 258 713 (inscription le 01 décembre 2025)
 - **Date de création** : 19 novembre 2025
-- **Dirigeant** : Cédric Mandin
-- **Activité principale** : Services d'aménagement paysager
-- **Siège social** : 80 Rue du Puy de Cornac, 33720 Cérons, France
+- **Code NAF/APE** : 81.30Z (Services d'aménagement paysager)
+- **Activité déclarée** : Création, aménagement et entretien des jardins, espaces verts et conseils paysagisme, ainsi que travaux de maçonnerie paysagère
+- **Siège social** : 80 rue du Puy de Cornac, 33720 Cérons, France
 - **Téléphone** : 09 94 25 87 13 (+33 9 94 25 87 13)
 - **Email** : lespaysagesdemandin@gmail.com
 - **Site web** : https://lespaysagesdemandin.fr
 - **Horaires** : Lundi–Vendredi 8h–18h · Samedi 8h–12h
 - **Paiements acceptés** : Chèque, virement bancaire, espèces
 - **Devise** : EUR
+- **Hébergement** : Vercel Inc. (Walnut, CA — États-Unis), CDN mondial conforme RGPD
 
 ---
 
@@ -187,9 +193,11 @@ Non, Cédric Mandin réalise lui-même l'ensemble des prestations. C'est une gar
 
 ## Mentions légales (extraits)
 
-**Éditeur du site** : Les Paysages de Mandin (entreprise individuelle), SIREN 994 258 713, dirigée par Cédric Mandin, 80 Rue du Puy de Cornac, 33720 Cérons.
+**Éditeur du site** : LES PAYSAGES DE MANDIN (SASU au capital de 1 000 €), SIREN 994 258 713, RCS Bordeaux, présidée par Cédric Mandin, 80 rue du Puy de Cornac, 33720 Cérons.
 
-**Directeur de la publication** : Cédric Mandin.
+**Hébergeur** : Vercel Inc., 340 S Lemon Avenue #4133, Walnut, CA 91789, États-Unis. Site : vercel.com. Conformité RGPD via Standard Contractual Clauses.
+
+**Directeur de la publication** : Cédric Mandin, en qualité de Président.
 
 **RGPD** : Aucune donnée n'est cédée à des tiers. Les données collectées via le formulaire de contact ou par email sont utilisées exclusivement pour répondre aux demandes de devis et la gestion de la relation commerciale. Conservation : 3 ans pour les prospects, durée contractuelle pour les clients.
 
