@@ -34,6 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- JSON-LD : Service -->
@@ -93,7 +94,14 @@
       <div class="nav-inner">
         <a href="/" class="logo" aria-label="Les Paysages de Mandin — Accueil">Les Paysages de Mandin</a>
         <div class="nav-links" role="list">
-          <a href="/#services" role="listitem">Prestations</a>
+          <div class="nav-dropdown" role="listitem">
+          <a href="/#services" aria-haspopup="true">Prestations<span class="caret material-symbols-outlined" aria-hidden="true">expand_more</span></a>
+          <div class="dropdown-menu" role="menu" aria-label="Nos prestations">
+            <a href="/creation-amenagement-jardin.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">park</span> Création &amp; aménagement</a>
+            <a href="/maconnerie-paysagere.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">foundation</span> Maçonnerie paysagère</a>
+            <a href="/entretien-jardin.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">yard</span> Entretien de jardin</a>
+          </div>
+        </div>
           <a href="/realisations.html" role="listitem">Réalisations</a>
           <a href="/contact.html" role="listitem">Zone d'intervention</a>
           <a href="/#faq" role="listitem">FAQ</a>
@@ -112,11 +120,14 @@
 
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navigation">
     <a href="/#services" onclick="closeMenu()">Prestations</a>
+    <a href="/creation-amenagement-jardin.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">park</span> Création &amp; aménagement</a>
+    <a href="/maconnerie-paysagere.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">foundation</span> Maçonnerie paysagère</a>
+    <a href="/entretien-jardin.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">yard</span> Entretien de jardin</a>
     <a href="/realisations.html" onclick="closeMenu()">Réalisations</a>
     <a href="/contact.html" onclick="closeMenu()">Zone d'intervention</a>
     <a href="/#faq" onclick="closeMenu()">FAQ</a>
     <a href="/contact.html" onclick="closeMenu()">Contact</a>
-    <a href="tel:+33780015029" class="nav-cta" onclick="closeMenu()">📞 Appeler maintenant</a>
+    <a href="tel:+33780015029" class="nav-cta" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">call</span> Appeler maintenant</a>
   </div>
 
   <!-- EN-TÊTE -->
@@ -187,7 +198,7 @@
           </ul>
           <a href="#" data-artidevis class="btn-green">Demander un devis gratuit</a>
           <div class="zone-highlight" style="margin-top:20px;">
-            <strong>🎯 Bon à savoir</strong>
+            <strong><span class="material-symbols-outlined" aria-hidden="true">center_focus_strong</span> Bon à savoir</strong>
             <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.6;margin:0;">Devis détaillé et gratuit sous 48h après la visite. Prix ferme, aucun sous-traitant : Cédric réalise lui-même votre chantier.</p>
           </div>
         </aside>
@@ -278,19 +289,19 @@
       <h2 class="reveal reveal-delay-1" style="text-align:center;">Complétez votre <em>projet paysager</em></h2>
       <div class="related-grid reveal reveal-delay-2" style="margin-top:40px;">
         <a href="/maconnerie-paysagere.html" class="related-card">
-          <div class="ic" aria-hidden="true">🧱</div>
+          <div class="ic" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">foundation</span></div>
           <h3>Maçonnerie paysagère</h3>
           <p>Escaliers, murets, terrasses, allées pavées et soutènements pour structurer durablement vos extérieurs.</p>
           <span class="arrow-link">Découvrir →</span>
         </a>
         <a href="/entretien-jardin.html" class="related-card">
-          <div class="ic" aria-hidden="true">🏡</div>
+          <div class="ic" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">yard</span></div>
           <h3>Entretien de jardins</h3>
           <p>Tonte, taille, entretien général : votre jardin reste impeccable toute l'année, sans y penser.</p>
           <span class="arrow-link">Découvrir →</span>
         </a>
         <a href="/realisations.html" class="related-card">
-          <div class="ic" aria-hidden="true">📷</div>
+          <div class="ic" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">photo_library</span></div>
           <h3>Nos réalisations</h3>
           <p>Découvrez des chantiers concrets menés sur le Bassin d'Arcachon et ses environs.</p>
           <span class="arrow-link">Voir la galerie →</span>

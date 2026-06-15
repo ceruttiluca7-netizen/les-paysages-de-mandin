@@ -50,7 +50,7 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
 }
-img { display: block; max-width: 100%; }
+img { display: block; max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
@@ -1769,3 +1769,118 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ============================================================
+   ICÔNES — Google Material Symbols
+============================================================ */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 1.15em;
+  vertical-align: -0.22em;
+}
+/* Grandes icônes de cartes (prestations, prestations liées) */
+.service-icon .material-symbols-outlined,
+.related-card .ic .material-symbols-outlined {
+  font-size: 2rem;
+  color: var(--primary);
+  vertical-align: middle;
+}
+.related-card .ic { line-height: 1; }
+/* Icônes dans les pastilles et badges (alignées au texte) */
+.cert-badge .material-symbols-outlined,
+.trust-badge .material-symbols-outlined,
+.featured-badge .material-symbols-outlined,
+.zone-highlight strong .material-symbols-outlined,
+.mobile-menu .nav-cta .material-symbols-outlined {
+  font-size: 1.1em;
+}
+.trust-badge .material-symbols-outlined { color: var(--accent); }
+
+/* ============================================================
+   MENU DÉROULANT — Prestations (desktop : survol + focus clavier)
+============================================================ */
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown > a { display: inline-flex; align-items: center; gap: 4px; }
+.nav-dropdown > a .caret {
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+.nav-dropdown:hover > a .caret,
+.nav-dropdown:focus-within > a .caret { transform: rotate(180deg); }
+/* pont invisible pour ne pas perdre le survol entre le lien et le menu */
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  right: -10px;
+  height: 16px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  min-width: 260px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1001;
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.dropdown-menu a {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-mid) !important;
+  white-space: nowrap;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.dropdown-menu a:hover { background: var(--bg-tint); color: var(--primary) !important; }
+.dropdown-menu a .material-symbols-outlined {
+  font-size: 1.3rem;
+  color: var(--primary-light);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+/* Sous-liens prestations dans le menu mobile plein écran */
+.mobile-sublink {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--text-mid) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-sublink .material-symbols-outlined { font-size: 1.3rem; color: var(--primary-light); }

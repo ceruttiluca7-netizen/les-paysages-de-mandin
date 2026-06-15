@@ -39,6 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
 
   <!-- Feuille de styles -->
   <link rel="stylesheet" href="styles.css">
@@ -187,7 +188,14 @@
         </a>
 
         <div class="nav-links" role="list">
-          <a href="#services" role="listitem">Prestations</a>
+          <div class="nav-dropdown" role="listitem">
+          <a href="#services" aria-haspopup="true">Prestations<span class="caret material-symbols-outlined" aria-hidden="true">expand_more</span></a>
+          <div class="dropdown-menu" role="menu" aria-label="Nos prestations">
+            <a href="/creation-amenagement-jardin.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">park</span> Création &amp; aménagement</a>
+            <a href="/maconnerie-paysagere.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">foundation</span> Maçonnerie paysagère</a>
+            <a href="/entretien-jardin.html" role="menuitem"><span class="material-symbols-outlined" aria-hidden="true">yard</span> Entretien de jardin</a>
+          </div>
+        </div>
           <a href="/realisations.html" role="listitem">Réalisations</a>
           <a href="/contact.html" role="listitem">Zone d'intervention</a>
           <a href="#faq" role="listitem">FAQ</a>
@@ -209,11 +217,14 @@
   <!-- Menu mobile plein écran -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navigation">
     <a href="#services" onclick="closeMenu()">Prestations</a>
+    <a href="/creation-amenagement-jardin.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">park</span> Création &amp; aménagement</a>
+    <a href="/maconnerie-paysagere.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">foundation</span> Maçonnerie paysagère</a>
+    <a href="/entretien-jardin.html" class="mobile-sublink" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">yard</span> Entretien de jardin</a>
     <a href="/realisations.html" onclick="closeMenu()">Réalisations</a>
     <a href="/contact.html" onclick="closeMenu()">Zone d'intervention</a>
     <a href="#faq" onclick="closeMenu()">FAQ</a>
     <a href="/contact.html" onclick="closeMenu()">Contact</a>
-    <a href="tel:+33780015029" class="nav-cta" onclick="closeMenu()">📞 Appeler maintenant</a>
+    <a href="tel:+33780015029" class="nav-cta" onclick="closeMenu()"><span class="material-symbols-outlined" aria-hidden="true">call</span> Appeler maintenant</a>
   </div>
 
   <!-- ============================================================
@@ -251,13 +262,13 @@
           </div>
           <!-- MODIFIÉ : ajout badge 20 ans d'expérience -->
           <div class="trust-badge">
-            🏆 20 ans d'expérience
+            <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> 20 ans d'expérience
           </div>
           <div class="trust-badge">
-            🛡️ RC Pro assurée
+            <span class="material-symbols-outlined" aria-hidden="true">verified_user</span> RC Pro assurée
           </div>
           <div class="trust-badge">
-            ⚡ Devis sous 48h
+            <span class="material-symbols-outlined" aria-hidden="true">bolt</span> Devis sous 48h
           </div>
         </div>
       </div>
@@ -274,18 +285,18 @@
   <section id="certifications" aria-label="Certifications et garanties">
     <div class="container">
       <div class="cert-bar reveal">
-        <div class="cert-badge">🛡️ RC Professionnelle</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">verified_user</span> RC Professionnelle</div>
         <div class="cert-sep" aria-hidden="true"></div>
-        <div class="cert-badge">🌿 Éco-responsable</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">eco</span> Éco-responsable</div>
         <div class="cert-sep" aria-hidden="true"></div>
-        <div class="cert-badge">⭐ Artisan qualifié</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">star</span> Artisan qualifié</div>
         <div class="cert-sep" aria-hidden="true"></div>
-        <div class="cert-badge">📋 Devis gratuit 48h</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">assignment</span> Devis gratuit 48h</div>
         <div class="cert-sep" aria-hidden="true"></div>
-        <div class="cert-badge">🏡 Travaux garantis</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">yard</span> Travaux garantis</div>
         <div class="cert-sep" aria-hidden="true"></div>
         <!-- MODIFIÉ : zone Bassin d'Arcachon -->
-        <div class="cert-badge">📍 Bassin d'Arcachon (33)</div>
+        <div class="cert-badge"><span class="material-symbols-outlined" aria-hidden="true">location_on</span> Bassin d'Arcachon (33)</div>
       </div>
     </div>
   </section>
@@ -417,8 +428,8 @@
 
         <!-- Service 1 — Création & aménagement -->
         <div class="service-card featured reveal reveal-delay-1">
-          <div class="featured-badge">⭐ Le plus demandé</div>
-          <div class="service-icon" aria-hidden="true">🌳</div>
+          <div class="featured-badge"><span class="material-symbols-outlined" aria-hidden="true">star</span> Le plus demandé</div>
+          <div class="service-icon" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">park</span></div>
           <h3>Création et aménagement de jardins</h3>
           <p>Conception et réalisation complète de votre jardin, de l'étude du sol à la livraison finale.</p>
           <ul class="service-list" aria-label="Prestations création et aménagement">
@@ -435,7 +446,7 @@
 
         <!-- Service 2 — Maçonnerie paysagère -->
         <div class="service-card reveal reveal-delay-2">
-          <div class="service-icon" aria-hidden="true">🧱</div>
+          <div class="service-icon" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">foundation</span></div>
           <h3>Maçonnerie paysagère</h3>
           <p>Structures minérales qui valorisent et structurent vos espaces extérieurs durablement.</p>
           <ul class="service-list" aria-label="Prestations maçonnerie paysagère">
@@ -455,7 +466,7 @@
 
         <!-- Service 3 — Entretien de jardins -->
         <div class="service-card reveal reveal-delay-3">
-          <div class="service-icon" aria-hidden="true">🏡</div>
+          <div class="service-icon" aria-hidden="true"><span class="material-symbols-outlined" aria-hidden="true">yard</span></div>
           <h3>Entretien de jardins</h3>
           <p>Confiez-nous l'entretien de votre jardin pour qu'il reste toujours impeccable, saison après saison.</p>
           <ul class="service-list" aria-label="Prestations entretien de jardins">
@@ -542,7 +553,7 @@
       <div class="zone-grid">
 
         <!-- ============================================================
-             ✏️ TEXTE — À MODIFIER selon les retours de l'artisan
+             ✏ TEXTE — À MODIFIER selon les retours de l'artisan
              Remplacer les noms de communes, secteurs, descriptions
         ============================================================ -->
         <!-- MODIFIÉ : texte SEO zone Bassin d'Arcachon -->
@@ -567,7 +578,7 @@
           </p>
 
           <div class="zone-highlight reveal">
-            <strong>🎯 Deux zones d'intervention</strong>
+            <strong><span class="material-symbols-outlined" aria-hidden="true">center_focus_strong</span> Deux zones d'intervention</strong>
             <ul role="list">
               <li><strong>Bassin d'Arcachon</strong> (zone principale)</li>
               <li><strong>Sud Gironde / Cérons</strong> (siège social)</li>
@@ -576,7 +587,7 @@
         </div>
 
         <!-- ============================================================
-             ✏️ LISTE DES COMMUNES — À METTRE À JOUR
+             ✏ LISTE DES COMMUNES — À METTRE À JOUR
              - Ajouter : copier une ligne <div class="commune-tag">
              - Commune principale/siège : class="commune-tag main"
              - Supprimer : effacer la ligne

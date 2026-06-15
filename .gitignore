@@ -17,3 +17,4 @@ node_modules/
 # Originaux JPG : sauvegarde locale uniquement (137 MB)
 # Les WebP optimisés dans images/realisations/ sont versionnés.
 images/originaux/
+.vercel
