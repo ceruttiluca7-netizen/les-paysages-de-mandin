@@ -56,7 +56,12 @@ Les Paysages de Mandin est une entreprise individuelle dirigée par Cédric Mand
 
 ## Pages du site
 
-- [Accueil](https://lespaysagesdemandin.fr/) : présentation complète des services, réalisations, processus, témoignages clients, FAQ et zone d'intervention
+- [Accueil](https://lespaysagesdemandin.fr/) : présentation, aperçu des prestations, réalisations, processus, FAQ et zone d'intervention
+- [Création et aménagement de jardins](https://lespaysagesdemandin.fr/creation-amenagement-jardin.html) : conception, préparation du sol, plantation, engazonnement, terrasses
+- [Maçonnerie paysagère](https://lespaysagesdemandin.fr/maconnerie-paysagere.html) : escaliers, murs et soutènements, terrasses bois et pavées, allées, dallage, clôtures
+- [Entretien de jardins](https://lespaysagesdemandin.fr/entretien-jardin.html) : tonte, taille de haies, entretien général, traitement raisonné, contrats à l'année
+- [Réalisations](https://lespaysagesdemandin.fr/realisations.html) : galerie de chantiers (création, maçonnerie, aménagement) sur le Bassin d'Arcachon
+- [Contact et zone d'intervention](https://lespaysagesdemandin.fr/contact.html) : coordonnées, horaires, communes desservies, demande de devis
 - [Mentions légales](https://lespaysagesdemandin.fr/mentions-legales.html) : informations légales, RGPD, hébergeur, droit applicable
 
 ## Optional

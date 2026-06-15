@@ -131,7 +131,46 @@
     "foundingDate": "2025-11-19",
     "priceRange": "€€",
     "paymentAccepted": "Chèque, Virement bancaire, Espèces",
-    "currenciesAccepted": "EUR"
+    "currenciesAccepted": "EUR",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Prestations de paysagisme sur le Bassin d'Arcachon",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Création et aménagement de jardins",
+            "serviceType": "Création paysagère",
+            "url": "https://lespaysagesdemandin.fr/creation-amenagement-jardin.html",
+            "areaServed": "Bassin d'Arcachon",
+            "provider": { "@type": "LandscapingBusiness", "name": "Les Paysages de Mandin" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Maçonnerie paysagère",
+            "serviceType": "Maçonnerie paysagère",
+            "url": "https://lespaysagesdemandin.fr/maconnerie-paysagere.html",
+            "areaServed": "Bassin d'Arcachon",
+            "provider": { "@type": "LandscapingBusiness", "name": "Les Paysages de Mandin" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Entretien de jardins",
+            "serviceType": "Entretien d'espaces verts",
+            "url": "https://lespaysagesdemandin.fr/entretien-jardin.html",
+            "areaServed": "Bassin d'Arcachon",
+            "provider": { "@type": "LandscapingBusiness", "name": "Les Paysages de Mandin" }
+          }
+        }
+      ]
+    }
   }
   </script>
 </head>
@@ -148,11 +187,11 @@
         </a>
 
         <div class="nav-links" role="list">
-          <a href="#benefices" role="listitem">Nos atouts</a>
-          <a href="#realisations" role="listitem">Réalisations</a>
-          <a href="#services" role="listitem">Services</a>
-          <a href="#zone-intervention" role="listitem">Zone d'intervention</a>
+          <a href="#services" role="listitem">Prestations</a>
+          <a href="/realisations.html" role="listitem">Réalisations</a>
+          <a href="/contact.html" role="listitem">Zone d'intervention</a>
           <a href="#faq" role="listitem">FAQ</a>
+          <a href="/contact.html" role="listitem">Contact</a>
         </div>
 
         <a href="tel:+33780015029" class="nav-cta" aria-label="Appeler pour un devis gratuit">
@@ -169,11 +208,11 @@
 
   <!-- Menu mobile plein écran -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navigation">
-    <a href="#benefices" onclick="closeMenu()">Nos atouts</a>
-    <a href="#realisations" onclick="closeMenu()">Réalisations</a>
-    <a href="#services" onclick="closeMenu()">Services</a>
-    <a href="#zone-intervention" onclick="closeMenu()">Zone d'intervention</a>
+    <a href="#services" onclick="closeMenu()">Prestations</a>
+    <a href="/realisations.html" onclick="closeMenu()">Réalisations</a>
+    <a href="/contact.html" onclick="closeMenu()">Zone d'intervention</a>
     <a href="#faq" onclick="closeMenu()">FAQ</a>
+    <a href="/contact.html" onclick="closeMenu()">Contact</a>
     <a href="tel:+33780015029" class="nav-cta" onclick="closeMenu()">📞 Appeler maintenant</a>
   </div>
 
@@ -187,14 +226,14 @@
       <div class="hero-content">
         <!-- MODIFIÉ : badge zone Bassin d'Arcachon -->
         <div class="hero-badge reveal">
-          <span>★★★★★</span> Paysagiste — Bassin d'Arcachon (33)
+          <span>★★★★★</span> Paysagiste · Bassin d'Arcachon (33)
         </div>
         <h1 class="reveal reveal-delay-1">
-          Votre jardin mérite<br><em>un vrai savoir-faire</em>
+          Votre jardin mérite <em>un vrai savoir-faire</em>
         </h1>
         <!-- MODIFIÉ : sous-titre zone Bassin d'Arcachon -->
         <p class="hero-sub reveal reveal-delay-2">
-          Création, aménagement et entretien de jardins sur le Bassin d'Arcachon. Cédric Mandin transforme vos espaces extérieurs en lieux de vie — à Arcachon, La Teste-de-Buch, Gujan-Mestras, Lège-Cap-Ferret et Andernos.
+          Création, aménagement et entretien de jardins sur le Bassin d'Arcachon. Cédric Mandin transforme vos espaces extérieurs en lieux de vie, à Arcachon, La Teste-de-Buch, Gujan-Mestras, Lège-Cap-Ferret et Andernos.
         </p>
         <div class="hero-ctas reveal reveal-delay-3">
           <a href="#" data-artidevis class="btn-primary">
@@ -299,332 +338,32 @@
   </section>
 
   <!-- ============================================================
-       RÉALISATIONS
+       RÉALISATIONS (teaser → realisations.html)
   ============================================================ -->
   <section id="realisations" aria-labelledby="realisations-h2">
     <div class="container">
       <span class="section-label reveal">Nos réalisations</span>
-      <!-- MODIFIÉ : zone Bassin d'Arcachon -->
-      <h2 id="realisations-h2" class="reveal reveal-delay-1">Des projets <em>concrets</em><br>sur le Bassin d'Arcachon</h2>
-      <!-- MODIFIÉ : zone Bassin d'Arcachon -->
-      <p class="section-desc reveal reveal-delay-2">Chaque jardin raconte une histoire unique. Voici quelques exemples de réalisations menées avec passion sur le Bassin d'Arcachon et ses environs.</p>
-
-      <!-- ============================================================
-           IMAGES DES PROJETS — WebP optimisé (1600 desktop / 800 mobile)
-           Originaux JPG sauvegardés dans images/originaux/
-           Pour ajouter une image dans un carrousel :
-             1. Copier une <img class="carousel-img"> dans le .carousel-track
-             2. Ajouter un <button class="carousel-dot"></button> dans .carousel-dots
-           Le JS détecte automatiquement le nombre d'images.
-      ============================================================ -->
-      <div class="real-grid">
-
-        <!-- ════════ Projet 1 — Bacs corten & bambous noirs ════════ -->
-        <div class="real-item reveal">
-          <div class="real-photo">
-            <div class="real-carousel" data-carousel>
-              <div class="carousel-track">
-                <img class="carousel-img active"
-                     src="images/realisations/escalier-corten/escalier-corten-bambous-vue-principale-mobile.webp"
-                     srcset="images/realisations/escalier-corten/escalier-corten-bambous-vue-principale-mobile.webp 800w,
-                             images/realisations/escalier-corten/escalier-corten-bambous-vue-principale.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/escalier-corten/escalier-corten-bambous-vue-principale.webp"
-                     alt="Bacs étagés en acier corten avec bambous noirs et éclairage LED — vue principale"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/escalier-corten/escalier-corten-bac-detail-mobile.webp"
-                     srcset="images/realisations/escalier-corten/escalier-corten-bac-detail-mobile.webp 800w,
-                             images/realisations/escalier-corten/escalier-corten-bac-detail.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/escalier-corten/escalier-corten-bac-detail.webp"
-                     alt="Bac en acier corten en gros plan avec bambous noirs et terrasse en bois"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/escalier-corten/escalier-corten-vue-ensemble-mobile.webp"
-                     srcset="images/realisations/escalier-corten/escalier-corten-vue-ensemble-mobile.webp 800w,
-                             images/realisations/escalier-corten/escalier-corten-vue-ensemble.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/escalier-corten/escalier-corten-vue-ensemble.webp"
-                     alt="Vue d'ensemble de l'escalier corten avec piscine et terrasse en bois"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/escalier-corten/escalier-corten-bacs-etages-mobile.webp"
-                     srcset="images/realisations/escalier-corten/escalier-corten-bacs-etages-mobile.webp 800w,
-                             images/realisations/escalier-corten/escalier-corten-bacs-etages.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/escalier-corten/escalier-corten-bacs-etages.webp"
-                     alt="Étagement des bacs corten en escalier avec jeunes plants de bambous"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/escalier-corten/escalier-corten-avant-travaux-mobile.webp"
-                     srcset="images/realisations/escalier-corten/escalier-corten-avant-travaux-mobile.webp 800w,
-                             images/realisations/escalier-corten/escalier-corten-avant-travaux.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/escalier-corten/escalier-corten-avant-travaux.webp"
-                     alt="État avant travaux : bambous existants et dalles métalliques posées au sol"
-                     loading="lazy">
-              </div>
-              <button class="carousel-prev" aria-label="Image précédente">‹</button>
-              <button class="carousel-next" aria-label="Image suivante">›</button>
-              <div class="carousel-dots" aria-hidden="true">
-                <button class="carousel-dot active" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-              </div>
-              <div class="real-photo-badge">📍 Bassin d'Arcachon · 2026</div>
-            </div>
-          </div>
-          <div class="real-content">
-            <span class="section-label">Création paysagère sur mesure</span>
-            <h3>Bacs étagés en acier corten et bambous noirs</h3>
-            <p>Conception et réalisation de bacs de plantation en acier corten, posés en escalier sur un dénivelé en bord de piscine. Plantés de bambous noirs (<em>Phyllostachys nigra</em>) sur paillage rouille assorti, et mis en valeur par un éclairage LED encastré. Une intégration design qui fait dialoguer le métal patiné, le bois de la terrasse et la lumière des spots.</p>
-            <div class="real-stats">
-              <div class="stat-item">
-                <div class="stat-num" data-count="5">0</div>
-                <div class="stat-label">bacs étagés</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="12">0</div>
-                <div class="stat-label">bambous plantés</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="6">0</div>
-                <div class="stat-label">spots LED encastrés</div>
-              </div>
-            </div>
-            <a href="#" data-artidevis class="btn-outline">
-              Projet similaire ? →
-            </a>
-          </div>
-        </div>
-
-        <!-- ════════ Projet 2 — Terrasse bois & escalier en pinède ════════ -->
-        <div class="real-item reverse reveal">
-          <div class="real-photo">
-            <div class="real-carousel" data-carousel>
-              <div class="carousel-track">
-                <img class="carousel-img active"
-                     src="images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois-mobile.webp"
-                     srcset="images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois-mobile.webp 800w,
-                             images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois.webp"
-                     alt="Construction d'une terrasse en bois avec escalier intégré sur sol sableux"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/chantier-lhostis/chantier-lhostis-vue-ensemble-mobile.webp"
-                     srcset="images/realisations/chantier-lhostis/chantier-lhostis-vue-ensemble-mobile.webp 800w,
-                             images/realisations/chantier-lhostis/chantier-lhostis-vue-ensemble.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/chantier-lhostis/chantier-lhostis-vue-ensemble.webp"
-                     alt="Vue d'ensemble du chantier : terrasse bois, escalier et bassin en construction"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/chantier-lhostis/chantier-lhostis-escalier-pin-mobile.webp"
-                     srcset="images/realisations/chantier-lhostis/chantier-lhostis-escalier-pin-mobile.webp 800w,
-                             images/realisations/chantier-lhostis/chantier-lhostis-escalier-pin.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/chantier-lhostis/chantier-lhostis-escalier-pin.webp"
-                     alt="Escalier en madriers sous un grand pin maritime du Bassin d'Arcachon"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/chantier-lhostis/chantier-lhostis-terrassement-mobile.webp"
-                     srcset="images/realisations/chantier-lhostis/chantier-lhostis-terrassement-mobile.webp 800w,
-                             images/realisations/chantier-lhostis/chantier-lhostis-terrassement.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/chantier-lhostis/chantier-lhostis-terrassement.webp"
-                     alt="Phase de terrassement et préparation du sol sableux"
-                     loading="lazy">
-              </div>
-              <button class="carousel-prev" aria-label="Image précédente">‹</button>
-              <button class="carousel-next" aria-label="Image suivante">›</button>
-              <div class="carousel-dots" aria-hidden="true">
-                <button class="carousel-dot active" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-              </div>
-              <div class="real-photo-badge">📍 Pinède du Bassin d'Arcachon · 2026</div>
-            </div>
-          </div>
-          <div class="real-content">
-            <span class="section-label">Maçonnerie paysagère & menuiserie</span>
-            <h3>Terrasse bois et escalier intégré en pinède</h3>
-            <p>Construction d'une terrasse en madriers de pin classe 4 et d'un escalier intégré en traverses paysagères, le long d'un bassin et au pied d'un grand pin maritime. Un chantier d'intégration paysagère mené dans le respect de la flore landaise et du sol sableux : aucune coupe d'arbre, traverses fixées sans dalle béton, drainage naturel préservé.</p>
-            <div class="real-stats">
-              <div class="stat-item">
-                <div class="stat-num" data-count="40">0</div>
-                <div class="stat-label">m² de terrasse bois</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="3">0</div>
-                <div class="stat-label">niveaux d'escalier</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="100">0</div>
-                <div class="stat-label">% sol sableux préservé</div>
-              </div>
-            </div>
-            <a href="#" data-artidevis class="btn-outline">
-              Démarrer mon projet →
-            </a>
-          </div>
-        </div>
-
-        <!-- ════════ Projet 3 — Habillage clôture en rondins de châtaignier ════════ -->
-        <div class="real-item reveal">
-          <div class="real-photo">
-            <div class="real-carousel" data-carousel>
-              <div class="carousel-track">
-                <img class="carousel-img active"
-                     src="images/realisations/cloture-bois-naturel/cloture-rondins-vue-principale-mobile.webp"
-                     srcset="images/realisations/cloture-bois-naturel/cloture-rondins-vue-principale-mobile.webp 800w,
-                             images/realisations/cloture-bois-naturel/cloture-rondins-vue-principale.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/cloture-bois-naturel/cloture-rondins-vue-principale.webp"
-                     alt="Clôture en rondins de châtaignier verticaux avec bac de plantation et palmier"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/cloture-bois-naturel/cloture-rondins-avant-apres-mobile.webp"
-                     srcset="images/realisations/cloture-bois-naturel/cloture-rondins-avant-apres-mobile.webp 800w,
-                             images/realisations/cloture-bois-naturel/cloture-rondins-avant-apres.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/cloture-bois-naturel/cloture-rondins-avant-apres.webp"
-                     alt="Avant / après — habillage de la palissade existante en rondins de châtaignier"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/cloture-bois-naturel/cloture-rondins-vue-large-mobile.webp"
-                     srcset="images/realisations/cloture-bois-naturel/cloture-rondins-vue-large-mobile.webp 800w,
-                             images/realisations/cloture-bois-naturel/cloture-rondins-vue-large.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/cloture-bois-naturel/cloture-rondins-vue-large.webp"
-                     alt="Vue large de la clôture en rondins avec terrasse bois et piscine au premier plan"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/cloture-bois-naturel/cloture-rondins-avant-mobile.webp"
-                     srcset="images/realisations/cloture-bois-naturel/cloture-rondins-avant-mobile.webp 800w,
-                             images/realisations/cloture-bois-naturel/cloture-rondins-avant.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/cloture-bois-naturel/cloture-rondins-avant.webp"
-                     alt="Avant travaux : palissade existante en lames de bois lasurées sombres"
-                     loading="lazy">
-              </div>
-              <button class="carousel-prev" aria-label="Image précédente">‹</button>
-              <button class="carousel-next" aria-label="Image suivante">›</button>
-              <div class="carousel-dots" aria-hidden="true">
-                <button class="carousel-dot active" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-              </div>
-              <div class="real-photo-badge">📍 Bassin d'Arcachon · 2026</div>
-            </div>
-          </div>
-          <div class="real-content">
-            <span class="section-label">Aménagement extérieur · Brise-vue</span>
-            <h3>Habillage clôture en rondins de châtaignier</h3>
-            <p>Transformation d'une palissade existante par un habillage en rondins de châtaignier non écorcé, posés verticalement sur un bac de plantation neuf en pin traité. Plantation de lierre grimpant pour végétaliser progressivement la clôture. Un changement de style radical — du bois lasuré sombre au naturel brut — sans démolir l'existant.</p>
-            <div class="real-stats">
-              <div class="stat-item">
-                <div class="stat-num" data-count="8">0</div>
-                <div class="stat-label">ml de clôture habillée</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="2">0</div>
-                <div class="stat-label">jours de pose</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="100">0</div>
-                <div class="stat-label">% bois local</div>
-              </div>
-            </div>
-            <a href="#" data-artidevis class="btn-outline">
-              Habiller ma clôture →
-            </a>
-          </div>
-        </div>
-
-        <!-- ════════ Projet 4 — Pose de gazon synthétique avec brise-vue ════════ -->
-        <div class="real-item reverse reveal">
-          <div class="real-photo">
-            <div class="real-carousel" data-carousel>
-              <div class="carousel-track">
-                <img class="carousel-img active"
-                     src="images/realisations/gazon-synthetique/gazon-synthetique-vue-principale-mobile.webp"
-                     srcset="images/realisations/gazon-synthetique/gazon-synthetique-vue-principale-mobile.webp 800w,
-                             images/realisations/gazon-synthetique/gazon-synthetique-vue-principale.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/gazon-synthetique/gazon-synthetique-vue-principale.webp"
-                     alt="Cour avec gazon synthétique posé, brise-vue en bruyère et terrasse en bois"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/gazon-synthetique/gazon-synthetique-brise-vue-mobile.webp"
-                     srcset="images/realisations/gazon-synthetique/gazon-synthetique-brise-vue-mobile.webp 800w,
-                             images/realisations/gazon-synthetique/gazon-synthetique-brise-vue.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/gazon-synthetique/gazon-synthetique-brise-vue.webp"
-                     alt="Vue plein cadre du brise-vue en bruyère naturelle posé sur la clôture"
-                     loading="lazy">
-                <img class="carousel-img"
-                     src="images/realisations/gazon-synthetique/gazon-synthetique-avant-mobile.webp"
-                     srcset="images/realisations/gazon-synthetique/gazon-synthetique-avant-mobile.webp 800w,
-                             images/realisations/gazon-synthetique/gazon-synthetique-avant.webp 1600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     data-full="images/realisations/gazon-synthetique/gazon-synthetique-avant.webp"
-                     alt="Avant travaux : terrain en friche avec herbes folles et terrasse abîmée"
-                     loading="lazy">
-              </div>
-              <button class="carousel-prev" aria-label="Image précédente">‹</button>
-              <button class="carousel-next" aria-label="Image suivante">›</button>
-              <div class="carousel-dots" aria-hidden="true">
-                <button class="carousel-dot active" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-                <button class="carousel-dot" type="button"></button>
-              </div>
-              <div class="real-photo-badge">📍 Bassin d'Arcachon · 2026</div>
-            </div>
-          </div>
-          <div class="real-content">
-            <span class="section-label">Aménagement clé en main · Sans entretien</span>
-            <h3>Pose de gazon synthétique et brise-vue</h3>
-            <p>Transformation d'espaces extérieurs (cours intérieures, copropriétés, petits jardins urbains) avec pose de gazon synthétique haute densité et brise-vue en bruyère ou branchage. Idéal pour les espaces difficiles d'accès, peu ensoleillés ou pour ceux qui veulent un extérieur impeccable sans tonte ni arrosage. Solution durable, propre toute l'année.</p>
-            <div class="real-stats">
-              <div class="stat-item">
-                <div class="stat-num" data-count="0">0</div>
-                <div class="stat-label">entretien annuel</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="10">0</div>
-                <div class="stat-label">ans de garantie</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num" data-count="3">0</div>
-                <div class="stat-label">jours de pose typique</div>
-              </div>
-            </div>
-            <a href="#" data-artidevis class="btn-outline">
-              Demander un devis →
-            </a>
-          </div>
-        </div>
-
+      <h2 id="realisations-h2" class="reveal reveal-delay-1">Des projets <em>concrets</em> sur le Bassin d'Arcachon</h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin-left:auto;margin-right:auto;text-align:center;">Création paysagère, maçonnerie, aménagement extérieur : un aperçu de chantiers menés avec passion sur le bassin et ses environs.</p>
+      <div class="real-teaser-grid reveal reveal-delay-2">
+        <a href="/realisations.html" class="real-teaser" aria-label="Bacs en acier corten et bambous noirs — voir nos réalisations">
+          <img src="images/realisations/escalier-corten/escalier-corten-bambous-vue-principale.webp" alt="Bacs étagés en acier corten avec bambous noirs et éclairage LED" loading="lazy" width="1600" height="1200">
+          <span class="real-teaser-cap">Bacs corten &amp; bambous noirs</span>
+        </a>
+        <a href="/realisations.html" class="real-teaser" aria-label="Terrasse bois et escalier en pinède — voir nos réalisations">
+          <img src="images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois.webp" alt="Terrasse en bois avec escalier intégré sous un pin maritime" loading="lazy" width="1600" height="1200">
+          <span class="real-teaser-cap">Terrasse bois en pinède</span>
+        </a>
+        <a href="/realisations.html" class="real-teaser" aria-label="Pose de gazon synthétique et brise-vue — voir nos réalisations">
+          <img src="images/realisations/gazon-synthetique/gazon-synthetique-vue-principale.webp" alt="Cour avec gazon synthétique, brise-vue en bruyère et terrasse en bois" loading="lazy" width="1600" height="1200">
+          <span class="real-teaser-cap">Gazon synthétique &amp; brise-vue</span>
+        </a>
+      </div>
+      <div class="section-cta-center reveal">
+        <a href="/realisations.html" class="btn-outline">Voir toutes nos réalisations →</a>
       </div>
     </div>
   </section>
-
-  <!-- ============================================================
-       LIGHTBOX — visualisation des photos en grand
-  ============================================================ -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Visionneuse de photos" aria-modal="true">
-    <button class="lightbox-close" aria-label="Fermer">×</button>
-    <button class="lightbox-prev" aria-label="Image précédente">‹</button>
-    <img class="lightbox-image" src="" alt="">
-    <button class="lightbox-next" aria-label="Image suivante">›</button>
-    <div class="lightbox-counter" aria-live="polite"></div>
-  </div>
 
   <!-- ============================================================
        PROCESSUS
@@ -691,7 +430,7 @@
             <li><span class="check" aria-hidden="true">✓</span> Aménagement paysager</li>
             <li><span class="check" aria-hidden="true">✓</span> Création de terrasses</li>
           </ul>
-          <a href="#" data-artidevis class="btn-green">Demander un devis</a>
+          <a href="/creation-amenagement-jardin.html" class="btn-green">Découvrir la prestation →</a>
         </div>
 
         <!-- Service 2 — Maçonnerie paysagère -->
@@ -711,7 +450,7 @@
             <li><span class="check" aria-hidden="true">✓</span> Terrasses en bois</li>
             <li><span class="check" aria-hidden="true">✓</span> Dallage et pavage</li>
           </ul>
-          <a href="#" data-artidevis class="btn-green-outline">Demander un devis</a>
+          <a href="/maconnerie-paysagere.html" class="btn-green-outline">Découvrir la prestation →</a>
         </div>
 
         <!-- Service 3 — Entretien de jardins -->
@@ -726,7 +465,7 @@
             <li><span class="check" aria-hidden="true">✓</span> Entretien général du jardin</li>
             <li><span class="check" aria-hidden="true">✓</span> Traitement raisonné des plantes</li>
           </ul>
-          <a href="tel:+33780015029" class="btn-green-outline">📞 Appeler maintenant</a>
+          <a href="/entretien-jardin.html" class="btn-green-outline">Découvrir la prestation →</a>
         </div>
       </div>
     </div>
@@ -809,7 +548,7 @@
         <!-- MODIFIÉ : texte SEO zone Bassin d'Arcachon -->
         <div class="zone-text">
           <span class="section-label reveal">Zone géographique</span>
-          <h2 id="zone-h2" class="reveal reveal-delay-1">Paysagiste sur le Bassin d'Arcachon (33) —<br><em>Où intervenons-nous ?</em></h2>
+          <h2 id="zone-h2" class="reveal reveal-delay-1">Paysagiste sur le Bassin d'Arcachon (33)<br><em>Où intervenons-nous ?</em></h2>
 
           <p class="reveal reveal-delay-2">
             <strong>Les Paysages de Mandin</strong> intervient <strong>principalement sur le Bassin d'Arcachon</strong>, en Gironde. Cédric Mandin couvre l'ensemble du pourtour du bassin, de la ville d'Arcachon à Lège-Cap-Ferret, en passant par La Teste-de-Buch, Gujan-Mestras et Andernos-les-Bains.
@@ -824,7 +563,7 @@
           </p>
 
           <p class="reveal reveal-delay-4">
-            Le Bassin d'Arcachon présente des caractéristiques paysagères singulières : <strong>sols sableux et pauvres</strong> hérités des Landes de Gascogne, climat océanique doux, forte humidité et ensoleillement généreux. Avec 20 ans d'expérience dans la région, Cédric sélectionne des végétaux parfaitement adaptés à ces conditions — essences côtières, plantes résistantes au vent et au sel, espèces bien acclimatées au massif landais — pour un jardin durable, esthétique et facile d'entretien.
+            Le Bassin d'Arcachon présente des caractéristiques paysagères singulières : <strong>sols sableux et pauvres</strong> hérités des Landes de Gascogne, climat océanique doux, forte humidité et ensoleillement généreux. Avec 20 ans d'expérience dans la région, Cédric sélectionne des végétaux parfaitement adaptés à ces conditions (essences côtières, plantes résistantes au vent et au sel, espèces bien acclimatées au massif landais) pour un jardin durable, esthétique et facile d'entretien.
           </p>
 
           <div class="zone-highlight reveal">
@@ -844,7 +583,7 @@
         ============================================================ -->
         <!-- MODIFIÉ : communes Bassin d'Arcachon + Sud Gironde -->
         <div class="communes-col reveal reveal-delay-2">
-          <h3>Communes desservies — Bassin d'Arcachon (33)</h3>
+          <h3>Communes desservies ·Bassin d'Arcachon (33)</h3>
           <div class="communes-grid" role="list" aria-label="Liste des communes desservies sur le Bassin d'Arcachon">
 
             <div class="commune-tag main" role="listitem"><span class="dot" aria-hidden="true"></span>Arcachon</div>
@@ -868,7 +607,7 @@
 
           </div>
 
-          <h3 style="margin-top: 28px;">Communes desservies — Sud Gironde (33)</h3>
+          <h3 style="margin-top: 28px;">Communes desservies ·Sud Gironde (33)</h3>
           <div class="communes-grid" role="list" aria-label="Liste des communes desservies en Sud Gironde">
 
             <div class="commune-tag main" role="listitem"><span class="dot" aria-hidden="true"></span>Cérons</div>
@@ -945,10 +684,6 @@
           <div class="logo">Les Paysages de Mandin</div>
           <!-- MODIFIÉ : zone Bassin d'Arcachon -->
           <p>Votre paysagiste sur le Bassin d'Arcachon. Création, aménagement et entretien de jardins à Arcachon, La Teste-de-Buch, Gujan-Mestras, Lège-Cap-Ferret et Andernos.</p>
-          <div class="footer-social" aria-label="Réseaux sociaux">
-            <a href="#" class="social-btn" aria-label="Page Facebook">f</a>
-            <a href="#" class="social-btn" aria-label="Page Instagram">in</a>
-          </div>
         </div>
 
         <!-- Services -->
@@ -956,11 +691,11 @@
           <h4>Services</h4>
           <!-- MODIFIÉ : mots-clés Bassin d'Arcachon -->
           <ul>
-            <li><a href="#services">Paysagiste Bassin d'Arcachon (33)</a></li>
-            <li><a href="#services">Création de jardin Arcachon</a></li>
-            <li><a href="#services">Entretien jardin Gujan-Mestras</a></li>
-            <li><a href="#services">Maçonnerie paysagère La Teste-de-Buch</a></li>
-            <li><a href="#services">Aménagement paysager Lège-Cap-Ferret</a></li>
+            <li><a href="/creation-amenagement-jardin.html">Création &amp; aménagement de jardin</a></li>
+            <li><a href="/maconnerie-paysagere.html">Maçonnerie paysagère</a></li>
+            <li><a href="/entretien-jardin.html">Entretien de jardin</a></li>
+            <li><a href="/realisations.html">Nos réalisations</a></li>
+            <li><a href="/contact.html">Zone d'intervention</a></li>
           </ul>
         </div>
 
@@ -968,11 +703,11 @@
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#benefices">Nos atouts</a></li>
-            <li><a href="#realisations">Réalisations</a></li>
-            <li><a href="#processus">Notre processus</a></li>
-            <li><a href="#zone-intervention">Zone d'intervention</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/#services">Prestations</a></li>
+            <li><a href="/realisations.html">Réalisations</a></li>
+            <li><a href="/contact.html">Zone d'intervention &amp; contact</a></li>
+            <li><a href="/#faq">FAQ</a></li>
           </ul>
         </div>
 

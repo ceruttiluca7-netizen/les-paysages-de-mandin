@@ -226,6 +226,7 @@ body.mentions-page .logo {
 #hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1538,4 +1539,233 @@ body.mentions-page .footer-bottom { padding: 0; }
   .footer-grid { grid-template-columns: 1fr; }
   .cert-sep { display: none; }
   .real-stats { flex-wrap: wrap; gap: 16px; }
+}
+
+/* ============================================================
+   SOUS-PAGES (prestations, réalisations, contact)
+   Réutilise au maximum les composants existants.
+============================================================ */
+/* Nav claire et sticky sur les sous-pages */
+body.subpage #nav {
+  position: sticky;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+body.subpage .logo { color: var(--text); }
+body.subpage .nav-links a { color: var(--text-mid); }
+body.subpage .burger span { background: var(--text); }
+body.subpage .nav-cta { background: var(--primary); }
+
+/* Bandeau d'en-tête sombre */
+.subhero {
+  background: var(--dark-bg);
+  padding: 72px 0 64px;
+  text-align: center;
+  position: relative;
+}
+.subhero .eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.subhero h1 {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.subhero h1 em { color: var(--accent-warm); font-style: normal; }
+.subhero p {
+  color: var(--dark-text);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+.subhero .hero-ctas { justify-content: center; margin-bottom: 0; }
+
+/* Fil d'Ariane */
+.breadcrumb {
+  background: var(--bg-tint);
+  border-bottom: 1px solid var(--border);
+  padding: 13px 0;
+}
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.breadcrumb li { display: flex; align-items: center; gap: 8px; }
+.breadcrumb li::after { content: '›'; color: var(--text-muted); opacity: 0.5; }
+.breadcrumb li:last-child::after { display: none; }
+.breadcrumb a { color: var(--primary); font-weight: 600; }
+.breadcrumb a:hover { color: var(--primary-dark); }
+.breadcrumb span[aria-current] { color: var(--text-mid); font-weight: 600; }
+
+/* Bloc de contenu rédactionnel */
+.prose-section { background: var(--white); }
+.prose-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.prose-body p {
+  font-size: 0.98rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.prose-body h2 { margin-bottom: 18px; }
+.prose-body h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 28px 0 12px;
+  letter-spacing: -0.02em;
+}
+.prose-body strong { color: var(--text); font-weight: 700; }
+.prose-aside {
+  background: var(--bg-tint);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  position: sticky;
+  top: 96px;
+}
+.prose-aside h3 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+.prose-aside .service-list { margin-bottom: 22px; }
+
+/* Cartes « prestations liées » / maillage interne */
+.related-section { background: var(--bg-tint); }
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.related-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.related-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+.related-card .ic { font-size: 1.8rem; margin-bottom: 14px; }
+.related-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.related-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex: 1;
+}
+.related-card .arrow-link {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.related-card:hover .arrow-link { color: var(--primary-dark); }
+
+/* Teaser réalisations sur l'accueil */
+.real-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.real-teaser {
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+.real-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.real-teaser:hover img { transform: scale(1.06); }
+.real-teaser .real-teaser-cap {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 28px 18px 16px;
+  background: linear-gradient(to top, rgba(15,30,18,0.85), transparent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.section-cta-center { text-align: center; }
+
+@media (max-width: 1024px) {
+  .prose-grid { grid-template-columns: 1fr; gap: 36px; }
+  .prose-aside { position: static; }
+  .related-grid { grid-template-columns: 1fr; }
+  .real-teaser-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   POLISH & ACCESSIBILITÉ (audit design)
+============================================================ */
+/* Équilibre des titres (évite les mots orphelins) */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* Les ancres ne passent plus sous la barre de nav fixe/sticky */
+section[id], header[id] { scroll-margin-top: 88px; }
+
+/* Retour tactile au clic (sensation de bouton physique) */
+.btn-primary:active, .btn-secondary:active, .btn-green:active,
+.btn-green-outline:active, .btn-outline:active, .btn-white:active,
+.btn-tel:active, .nav-cta:active, .btn-back:active,
+.card:active, .related-card:active {
+  transform: translateY(1px) scale(0.985);
+}
+
+/* Focus clavier visible (navigation au clavier) */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--primary-light);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Respect de prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }

@@ -6,7 +6,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://lespaysagesdemandin.fr/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,6 +14,51 @@
       <image:title>Bacs étagés en acier corten et bambous noirs — Les Paysages de Mandin</image:title>
       <image:caption>Création paysagère sur mesure : bacs en acier corten étagés, bambous noirs sur paillage rouille, éclairage LED encastré</image:caption>
     </image:image>
+  </url>
+
+  <!-- Prestation : création et aménagement de jardins -->
+  <url>
+    <loc>https://lespaysagesdemandin.fr/creation-amenagement-jardin.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Prestation : maçonnerie paysagère -->
+  <url>
+    <loc>https://lespaysagesdemandin.fr/maconnerie-paysagere.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Prestation : entretien de jardins -->
+  <url>
+    <loc>https://lespaysagesdemandin.fr/entretien-jardin.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Réalisations -->
+  <url>
+    <loc>https://lespaysagesdemandin.fr/realisations.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lespaysagesdemandin.fr/images/realisations/chantier-lhostis/chantier-lhostis-terrasse-bois.webp</image:loc>
+      <image:title>Terrasse bois et escalier intégré en pinède — Les Paysages de Mandin</image:title>
+      <image:caption>Maçonnerie paysagère : terrasse en madriers de pin et escalier en traverses, intégration en pinède du Bassin d'Arcachon</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact et zone d'intervention -->
+  <url>
+    <loc>https://lespaysagesdemandin.fr/contact.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
