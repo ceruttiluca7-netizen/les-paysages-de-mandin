@@ -4,7 +4,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /mentions-legales.html
 
 # Sitemap principal
 Sitemap: https://lespaysagesdemandin.fr/sitemap.xml
